@@ -2,20 +2,20 @@
 
 > 스마일게이트 스토브 사전 과제 
 
-* 1차목표 1/16 ~ 18
+* 1차목표 1/16 ~ 18 (완료)
   * vue.js -  Vue is a progressive framework 
   * Do it! vue.js 입문 완독 & 코딩 
-* 2차목표 ~1/21
+* 2차목표 ~1/21 (완료)
   * 프로젝트 생성 및 개발환경 구축 (vue-cli)
   * 기본 기능 구현 
-* 3차목표 ~1/21
-  * meterial + vue (별로)
+* 3차목표 ~1/21 (완료)
+  * ~~meterial + vue~~
   * bootstrap + vue (OK)
   * 세부 구현 및 리펙토링
   * eslint 적용
   * readme.md 작성
   * git repository 생성
-* 4차목표 ~1/22
+* 4차목표 ~1/22 
   * typescript
   * rxjs
 
