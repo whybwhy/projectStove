@@ -16,8 +16,8 @@
 * eslint 적용
   * readme.md 작성
   * git repository 생성
-  * typescript 적용
-  * rxjs 적용
+  ~~* typescript 적용~~
+  ~~* rxjs 적용~~
 
 ## 요구사항 체크 리스트
 
