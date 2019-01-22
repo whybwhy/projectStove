@@ -1,33 +1,33 @@
 # projectStove
 
-> 스마일게이트 스토브 사전 과제 
+> 스마일게이트 스토브 사전 과제  - Image Upload & Cropper
 
 * 1차목표 1/16 ~ 18 (완료)
   * vue.js -  Vue is a progressive framework 
-  * Do it! vue.js 입문 완독 & 코딩 
-* 2차목표 ~1/21 (완료)
+  * Do it! vue.js 입문 & 코딩 
+* 2차목표 ~1/19 (완료)
   * 프로젝트 생성 및 개발환경 구축 (vue-cli)
   * 기본 기능 구현 
 * 3차목표 ~1/21 (완료)
   * ~~meterial + vue~~
-  * bootstrap + vue (OK)
+  * bootstrap + vue
   * 세부 구현 및 리펙토링
   * eslint 적용
   * readme.md 작성
   * git repository 생성
 * 4차목표 ~1/22 
-  * typescript
-  * rxjs
+  * typescript 적용
+  * rxjs 적용
 
 ## Build Setup
 
 ``` bash
 # install dependencies
 npm install vue-cli
-npm i vue-cli
 vue init webpack-simple
+ 
 npm install --save vue-croppa
-npm i bootstrap-vue
+npm install bootstrap-vue
 
 # serve with hot reload at localhost:8080
 npm run dev

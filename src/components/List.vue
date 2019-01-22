@@ -13,7 +13,6 @@
       </b-row>
     </b-container>
 
-
   <b-container class="center" v-if="propsImageList.length > 0">
     <b-row class="justify-content-md-center">
       <b-button size="sm" variant="danger" v-on:click="removeAllItem()">clearAll</b-button>
@@ -25,17 +24,17 @@
 
 <script>
 
-    export default {
-      props: ['propsImageList'],
-      methods : {
-        removeItem (item, index) {
-          this.$emit("removeItem", item, index)
-        },
-        removeAllItem () {
-          this.$emit("removeAllItem")
-        }
-      }
+export default {
+  props: ['propsImageList'],
+  methods: {
+    removeItem (item, index) {
+      this.$emit('removeItem', item, index)
+    },
+    removeAllItem () {
+      this.$emit('removeAllItem')
     }
+  }
+}
 </script>
 
 <style scoped>

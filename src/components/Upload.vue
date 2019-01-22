@@ -47,41 +47,41 @@
 
 <script>
 
-  import Vue from 'vue'
-  import Croppa from 'vue-croppa/dist/vue-croppa'
-  import 'vue-croppa/dist/vue-croppa.css'
-  Vue.use(Croppa)
+import Vue from 'vue'
+import Croppa from 'vue-croppa/dist/vue-croppa'
+import 'vue-croppa/dist/vue-croppa.css'
+Vue.use(Croppa)
 
-  export default {
-    data () {
-      return {
-        myCroppa: {},
-        chosenImage : ""
+export default {
+  data () {
+    return {
+      myCroppa: {},
+      chosenImage: ''
+    }
+  },
+  methods: {
+    uploadImage () {
+      if (!this.myCroppa.hasImage()) {
+        // this.$refs.modalCroppa.show()
+        this.myCroppa.chooseFile()
+        return false
       }
+
+      this.chosenImage = this.myCroppa.generateDataUrl()
+      this.$emit('uploadImage', this.chosenImage)
+      this.myCroppa.remove()
     },
-    methods: {
-      uploadImage() {
-        if(!this.myCroppa.hasImage()) {
-          //this.$refs.modalCroppa.show()
-          this.myCroppa.chooseFile()
-          return false;
-        }
-
-        this.chosenImage = this.myCroppa.generateDataUrl()
-        this.$emit("uploadImage", this.chosenImage);
-        this.myCroppa.remove()
-      },
-      zoomIn() {
-        this.myCroppa.hasImage() ? this.myCroppa.zoomIn() : this.myCroppa.chooseFile()
-      },
-      zoomOut() {
-        this.myCroppa.hasImage() ? this.myCroppa.zoomOut() : this.myCroppa.chooseFile()
-      },
-      hideModal () {
-        this.$refs.modalCroppa.hide()
-      }
+    zoomIn () {
+      this.myCroppa.hasImage() ? this.myCroppa.zoomIn() : this.myCroppa.chooseFile()
+    },
+    zoomOut () {
+      this.myCroppa.hasImage() ? this.myCroppa.zoomOut() : this.myCroppa.chooseFile()
+    },
+    hideModal () {
+      this.$refs.modalCroppa.hide()
     }
   }
+}
 
 </script>
 

@@ -8,4 +8,3 @@
     </b-jumbotron>
   </div>
 </template>
-
