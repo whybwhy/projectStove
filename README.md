@@ -20,21 +20,47 @@
   * rxjs 적용
 
 ## 요구사항 체크 리스트
-|           | 요구사항                                             | 상태                                                                                                              |
-|-----------|------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
-| 과제      | image Cropper Upload 샘플                            | 완료                                                                                                              |
-| 기술 스택 | vue.js + typescript + rxjs                           | vue.js                                                                                                            |
-| 요구사항  | IE9 동작가능                                         | 테스트완료. vue-croppa 라이브러리가 IE10 이상을 지원한다고 나왔습니다만 IE9으로 테스트 시 큰 문제 없었습니다. 그리고 PC 기준으로 개발했기 때문에 모바일 브라우저에서 UI가 부적합합니다.                                                              |
-| 문제 해결 | 요구된 기술 스택으로 재활용 가능한 라이브러리로 제작 | single page component로 Upload 와 List 를 분리해서 구현했지만 한 component로 구현 하면 바로 사용가능할 것 같습니다.                                                                                                              |
-|           | SPA                                                  | 완료                                                                                                              |
-|           | 데이터 저장 방식                                     | localStorage사용                                                                                                  |
-|           | Image Upload 및 Cropper 기능은 라이브러리 사용 가능  | vue-croppa 사용                                                                                                   |
-|           | 썸네일, 확대/축소                                    | 완료                                                                                                              |
-| 특징      |                                                      | TDD 미작성                                                                                                        |
-|           | RxJS                                                 | 미사용                                                                                                            |
-| 제출      | readme.md                                            | 미사용                                                                                                            |
-|           | npm run으로 실행 가능                                | 방법 1: http://13.209.116.161:8000/ 방법 2: 터미널에서 첨부파일에서 npm run dev 실행 방법 3: 첨부파일 에서 index.html 실행 |
 
+* 과제 
+  * impage cropper upload 샘플
+    * 완료
+    
+* 기술스택
+  * vue.js + typescript + rxjs
+    * vue.js 
+* 요구사항
+  * IE9 동작가능
+    * 테스트완료
+    * vue-croppa 라이브러리가 IE10 이상을 지원한다고 나왔습니다만 IE9으로 테스트 시 이슈는 발견 못했습니다.
+    * PC 기준으로 UI 작업 때문에 모바일 브라우저에서 UI가 부적합합니다. 
+* 문제 해결
+  * 요구된 기술 스택으로 재활용 가능한 라이브러리로 제작
+    * Upload 와 List component를 분리 했습니다만 통합한다면 재활용 가능한 Component로 사용 가능 할 것 같습니다.
+  * SPA
+    * 완료 ex) 이미지 리스트 
+  * 데이터 저장 방식
+    * LocalStorage.
+  * Image Upload 및 Cropper 기능은 라이브러리 사용 가능
+    * vue-croppa
+  * 썸네일, 확대/축소
+    * 완료   
+* 특징
+  * TDD
+    * TDD 미구현
+  * RxJS
+    * 미사용
+* 제출 
+  * readme.md
+    * 작성 완료
+  * npm run 으로 실행
+    * 방법 1
+      *  
+      * 개인 aws 서버에 업로드했습니다만 가끔 Shutdown 되니 참고 부탁드립니다.
+    * 방법 2
+      * 윤보람_output.zip 해제 후 npm run dev 실행
+    * 방법 3
+      * 윤보람_output_dist.zip 해제 후 index.html 실행  
+  
 ## Build Setup
 
 ``` bash
