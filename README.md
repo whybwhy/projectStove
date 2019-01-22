@@ -59,9 +59,9 @@
       * http://13.209.116.161:8000/
       * 개인 aws 서버에 업로드했습니다만 가끔 Shutdown 되니 참고 부탁드립니다.
     * 방법 2
-      * 윤보람_output.zip 해제 후 npm run dev 실행
+      * 윤보람_projectStove.zip 해제 후 npm run dev 실행
     * 방법 3
-      * 윤보람_output_dist.zip 해제 후 index.html 실행  
+      * 윤보람_projectStove_dist.zip 해제 후 index.html 실행  
   
 ## Build Setup
 
