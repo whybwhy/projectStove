@@ -4,6 +4,10 @@
         <Upload v-on:uploadImage="uploadImage"></Upload>
         <List v-bind:propsImageList="imageList" v-on:removeAllItem="removeAllItem" v-on:removeItem="removeItem"></List>
         <Footer></Footer>
+      <!-- modal -->
+      <b-modal ref="modalCaution" hide-footer title="Message" >
+          <p class="my-4">localStorage 용량이 초과 되었습니다.</p>
+      </b-modal>
   </div>
 </template>
 
@@ -36,8 +40,13 @@ export default {
   methods: {
     uploadImage (dataUrl) {
       let key = this.prefix + new Date().getTime()
-      localStorage.setItem(key, dataUrl)
-      this.setData(key, dataUrl)
+      try {
+        localStorage.setItem(key, dataUrl)
+        this.setData(key, dataUrl)
+      } catch (error) {
+        this.$refs.modalCaution.show()
+        console.log(error)
+      }
     },
     removeItem (key, index) {
       localStorage.removeItem(key)
@@ -64,7 +73,3 @@ export default {
   }
 }
 </script>
-
-<style>
-
-</style>

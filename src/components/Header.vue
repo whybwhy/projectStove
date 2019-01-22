@@ -8,6 +8,7 @@
     <b-btn variant="primary">eslint</b-btn>
     <b-btn variant="primary">vue-croppa</b-btn>
     <b-btn variant="primary">localStorage</b-btn>
+    <b-btn variant="primary">spa</b-btn>
   </b-jumbotron>
 </template>
 
@@ -16,7 +17,3 @@ export default {
   name: 'Header'
 }
 </script>
-
-<style scoped>
-
-</style>

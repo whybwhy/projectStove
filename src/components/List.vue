@@ -12,18 +12,15 @@
         <div class="w-100">&nbsp;</div>
       </b-row>
     </b-container>
-
-  <b-container class="center" v-if="propsImageList.length > 0">
-    <b-row class="justify-content-md-center">
-      <b-button size="sm" variant="danger" v-on:click="removeAllItem()">clearAll</b-button>
-    </b-row>
-  </b-container>
-
+    <b-container class="center" v-if="propsImageList.length > 0">
+      <b-row class="justify-content-md-center">
+        <b-button size="sm" variant="danger" v-on:click="removeAllItem()">clearAll</b-button>
+      </b-row>
+    </b-container>
   </div>
 </template>
 
 <script>
-
 export default {
   props: ['propsImageList'],
   methods: {
@@ -36,9 +33,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-  li {
-    display: flex;
-  }
-</style>
