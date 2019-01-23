@@ -53,11 +53,7 @@ export default {
       this.imageList.splice(index, 1)
     },
     removeAllItem () {
-      for (let i = 0; i < localStorage.length; i++) {
-        if (localStorage.key(i).includes(this.prefix)) {
-          localStorage.clear()
-        }
-      }
+      localStorage.clear()
       this.imageList = []
     },
     setData (key, value) {
